@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="final_1.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> 
+    body {padding: 0; margin: 0;} 
+    #mapid {width:25%; height:100%; position:fixed; bottom:0; padding:0; z-index:1}
+    #defaultCanvas0 {}
+    @font-face {
+      font-family: dinHeavy;
+      src: url(assets/fonts/DINNextLTPro-Heavy.otf);
+    }
+    @font-face {
+      font-family: dinMedium;
+      src: url(assets/fonts/DINNextLTPro-Medium.otf);
+    }
+    @font-face {
+      font-family: dinBold;
+      src: url(assets/fonts/DINNextLTPro-Bold.otf);
+      font-weight:bold;
+    }
+    @font-face {
+      font-family: dinReg;
+      src: url(assets/fonts/DINNextLTPro-Regular.otf);
+    }
+    @font-face {
+      font-family: dinLight;
+      src: url(assets/fonts/DINNextLTPro-Light.otf);
+    }
+    
+    #title {width:25%; height:50px; position:fixed; top:0; left:0; padding:15px; font-family:dinHeavy, serif; font-size:28; color:white; z-index: 99}
+    #subtitle {width:25%; height:20px; position:fixed; top:50; left:0; padding-left:15px; font-family:dinMedium, serif; font-size:14; font-style:italic; color:white; z-index: 99}
+    #description {width:22%; height:50px; position:fixed; top:80; left:0; padding-left:15px; padding-top:6px; font-family:dinLight, serif; font-size:12; color:white; z-index: 99}
+    #panelBg {width:25%; height:150px; position:fixed; top:0; left:0; background-color:rgba(0,0,0, 0.62); z-index: 50}
+    #divLine {width:25%; height:.5px; position:fixed; top:80; left:0; background-color:rgba(255,255,255, 0.42); z-index: 51}
+    #sites {opacity:0; z-index:99}
+    
+  </style>
+</head>
+
+<body>
+  <div id="mapid"></div>
+</body>
+</html>
